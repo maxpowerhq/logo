@@ -1,0 +1,12 @@
+node_modules/
+*.log
+.DS_Store
+*.tsbuildinfo
+
+# dist is tracked for the rendered images (png/ico/svg + hero); only the
+# compiled JS/maps are ignored (regenerated on publish via prepublishOnly).
+dist/**/*.js
+dist/**/*.d.ts
+dist/**/*.map
+dist/*.js
+dist/*.d.ts

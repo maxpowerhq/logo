@@ -1,0 +1,63 @@
+{
+  "name": "@maxpowerhq/logo",
+  "version": "0.1.0",
+  "description": "Official logo package for Maxpower — the fat MAX wordmark, M monogram, React component, and pre-rendered icons.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "assets", "README.md"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js"
+    },
+    "./assets/*": "./assets/*"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run compile && npm run build:cli && npm run generate",
+    "build:cli": "tsc src/build.ts --outDir dist --module esnext --target es2020 --moduleResolution node --esModuleInterop --skipLibCheck",
+    "compile": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch",
+    "generate": "node dist/build.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["maxpower", "max", "logo", "icon", "favicon", "svg", "wordmark"],
+  "author": "Maxpower",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxpowerhq/logo"
+  },
+  "homepage": "https://github.com/maxpowerhq/logo",
+  "dependencies": {
+    "sharp": "^0.34.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.2.14",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true }
+  },
+  "brand": {
+    "name": "Maxpower",
+    "tagline": "Official brand marks — SVG, PNG, ICO, favicons & app icons.",
+    "github": "maxpowerhq",
+    "domain": ""
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
