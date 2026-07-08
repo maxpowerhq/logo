@@ -1,24 +1,24 @@
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/npm/@maxpowerhq/logo/dist/hero.svg" alt="@maxpowerhq/logo" width="100%" />
+  <img src="https://cdn.jsdelivr.net/npm/maxpower-logo/dist/hero.svg" alt="maxpower-logo" width="100%" />
 </p>
 
-# @maxpowerhq/logo
+# maxpower-logo
 
 Official Maxpower brand marks in every format and size — the fat **MAX**
 wordmark, the **M** monogram, a React component, and pre-rendered PNG,
 multi-resolution ICO, favicons, and app / dock / tray / social icons.
-Installable via `@maxpowerhq/logo`, browsable in `dist/`.
+Installable via `maxpower-logo`, browsable in `dist/`.
 
 ## Install
 
 ```sh
-pnpm add @maxpowerhq/logo
+pnpm add maxpower-logo
 ```
 
 ## Use — React
 
 ```tsx
-import { MaxpowerLogo } from '@maxpowerhq/logo/react';
+import { MaxpowerLogo } from 'maxpower-logo/react';
 
 <MaxpowerLogo size={64} />                          {/* red M monogram */}
 <MaxpowerLogo form="wordmark" variant="white" />    {/* white MAX wordmark */}
@@ -28,7 +28,7 @@ import { MaxpowerLogo } from '@maxpowerhq/logo/react';
 ## Use — SVG strings
 
 ```ts
-import { getMarkColor, getWordmarkWhite, getLockupMono } from '@maxpowerhq/logo';
+import { getMarkColor, getWordmarkWhite, getLockupMono } from 'maxpower-logo';
 
 element.innerHTML = getWordmarkWhite();
 ```

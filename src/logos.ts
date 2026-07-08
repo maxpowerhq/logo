@@ -1,4 +1,4 @@
-// @maxpowerhq/logo — canonical Maxpower marks.
+// maxpower-logo — canonical Maxpower marks.
 //
 // Two variants × three forms.
 //

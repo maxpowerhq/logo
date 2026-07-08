@@ -1,5 +1,5 @@
 /**
- * @maxpowerhq/logo
+ * maxpower-logo
  *
  * Canonical Maxpower marks — SVG strings, a React component, and pre-rendered
  * assets for embedding anywhere.

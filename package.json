@@ -1,5 +1,5 @@
 {
-  "name": "@maxpowerhq/logo",
+  "name": "maxpower-logo",
   "version": "0.1.0",
   "description": "Official logo package for Maxpower — the fat MAX wordmark, M monogram, React component, and pre-rendered icons.",
   "type": "module",
